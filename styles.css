@@ -1,0 +1,26 @@
+header {
+  text-align: center;
+  color: white;
+  background: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+main {
+  background: gray;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+p {
+  background: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+footer {
+  background: white;
+  text-align: center;
+}
