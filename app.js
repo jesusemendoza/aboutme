@@ -115,6 +115,8 @@ while (count !==7) {
 
   }
 
+  alert('Correct!');
+
   //Question 6
   while (count === 5){
     console.log('inside sixth loop overall count', count);
@@ -136,6 +138,7 @@ while (count !==7) {
         alert('better luck next time bud!');
         count++;
         myPokemon = randPokemon;
+        wrongCounter=0;
         console.log('Pokemon matches random number',myPokemon);
         break;
       }
@@ -145,11 +148,39 @@ while (count !==7) {
     break;
 
   }
-  alert('Correct!');
+
+  //Question 7
+  var myStates = ['idaho', 'california', 'florida','illinois'];
+  while (count === 6){
+    console.log('inside seventh loop overall count', count);
+    while (myStateGuess !== myStates[0] && myStateGuess !== myStates[1] && myStateGuess !== myStates[2] && myStateGuess !== myStates[3]) {
+      while(wrongCounter !==0){
+        while(wrongCounter === 1){
+          points--;
+          break;
+        }
+        alert('Nope, I have never lived in that state');
+        break;
+      }
+      var myStateGuess = prompt('Which states other than whashington have i lived?').toLowerCase();
+      wrongCounter++;
+      while(wrongCounter === 6){
+        alert('better luck next time bud!');
+        myStateGuess = myStates[0];
+        console.log('Pokemon matches random number',myPokemon);
+        break;
+      }
+      console.log('Inside Pokemon Counter:', wrongCounter);
+      console.log('Pokemon input input:', myPokemon);
+    }
+    alert('Ive actually lived in California, Illinois, Florida, and Idaho');
+    break;
+
+  }
   count++;
   wrongCounter = 0;
   console.log('current overall count:', count);
-  console.log('current score out of 7', points);
+  console.log('current score out of 7:', points);
 }
 
 console.log('final points:', points);
