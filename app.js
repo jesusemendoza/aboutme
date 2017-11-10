@@ -1,5 +1,22 @@
 'use strict';
 
+function addlibs() {
+  alert('this is a game of addlibs');
+  var v1 = prompt('enter in a verb');
+  var v2 = prompt('enter in a new verd');
+  var n1 = prompt('enter in a name');
+  var n2 = prompt('enter in a place');
+  console.log('verb1:',v1);
+  console.log('verb2:',v2);
+  console.log('name:',n1);
+  console.log('place:',n2);
+  alert('What you said');
+  alert('I ' + v1 + ' yesterday to the ' + n2 +'. Then I ' + v2 +' at my friend\'s ' + n1 +' house.');
+
+}
+
+addlibs();
+
 var count=0;
 var wrongCounter = 0;
 var points = 7;
