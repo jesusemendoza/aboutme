@@ -39,4 +39,5 @@ p {
 footer {
   background: white;
   text-align: center;
+  position:static;
 }
