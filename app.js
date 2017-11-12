@@ -3,7 +3,7 @@
 function addlibs() {
   alert('this is a game of addlibs');
   var v1 = prompt('enter in a verb');
-  var v2 = prompt('enter in a new verd');
+  var v2 = prompt('enter in a new verb');
   var n1 = prompt('enter in a name');
   var n2 = prompt('enter in a place');
   console.log('verb1:',v1);
@@ -96,7 +96,7 @@ while (count !==7) {
     console.log('inside fourth loop overall count', count);
     while (myFruit !=='n' && myFruit !=='no') {
       while(wrongCounter !==0){
-        while(wrongCounter === 1){
+        wh();ile(wrongCounter === 1){
           points--;
           break;
         }
